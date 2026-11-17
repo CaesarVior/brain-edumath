@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         CONTAINER_NAME = 'nivor-app-18'
-        APP_PORT = '4006'
+        APP_PORT = '4007'
     }
 
     stages {
