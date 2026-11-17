@@ -15,4 +15,5 @@ RUN mkdir -p /app/static/uploads /app/backups
 EXPOSE 4007
 
 # Gunakan 1 worker + multi-thread agar aman untuk SQLite (menghindari database is locked)
-CMD ["gunicorn", "-w", "1", "--threads", "4", "-b", "0.0.0.0:4008", "wsgi:app"]
+CMD ["gunicorn", "-w", "1", "--threads", "4", "-b", "0.0.0.0:4007", "wsgi:app"]
+
